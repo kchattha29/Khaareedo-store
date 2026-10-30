@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Khaareedo.pk | Shop the little things you love</title>
+  <meta name="description" content="Discover handmade gifts, crochet, personalized products and more at Khaareedo.pk.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">A little something special, just for you ✦</div>
+  <header class="site-header">
+    <a class="brand brand-simple" href="#">khaareedo.pk</a>
+    <nav><a href="#shop">Shop</a><a href="#story">Our story</a><a href="#contact">Contact</a></nav>
+    <button class="cart-button" id="open-cart" aria-label="Open shopping cart">Bag <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CURATED WITH CARE</p>
+        <h1>Find something<br><em>lovely.</em></h1>
+        <p class="hero-text">Thoughtful gifts, handmade details and little finds that make everyday moments feel special.</p>
+        <a class="primary-button" href="#shop">Explore the collection <span>↗</span></a>
+        <p class="hero-note">Made for gifting. Chosen with love.</p>
+      </div>
+      <div class="hero-art" aria-label="Decorative shopping illustration">
+        <div class="sun"></div><div class="art-card card-one"><span>little</span><b>joys</b><i>✳</i></div>
+        <div class="art-card card-two"><span>GIFT</span><b>HAPPY</b><span>moments</span></div>
+        <div class="flower">✿</div><div class="art-caption">THE KHAAREEDO EDIT · 01</div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><span>✳</span><p><b>Thoughtful finds</b><small>Picked with care</small></p></div>
+      <div><span>♡</span><p><b>Made for gifting</b><small>Little moments, big smiles</small></p></div>
+      <div><span>✉</span><p><b>Easy ordering</b><small>Order through WhatsApp</small></p></div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2>Shop your favourites</h2></div><p>Browse our growing collection<br>of lovely things.</p></div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="All">All items</button>
+        <button class="filter" data-category="Crochet">Crochet</button>
+        <button class="filter" data-category="Gifts">Gifts</button>
+        <button class="filter" data-category="Personalized">Personalized</button>
+        <button class="filter" data-category="Art">Art & décor</button>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="demo-note">Sample products are shown for design preview. Replace names, photos and prices with your actual products before publishing.</p>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-stamp">K<br><span>✳</span></div>
+      <div><p class="eyebrow">A NOTE FROM US</p><h2>Little things.<br><em>Lovely feelings.</em></h2></div>
+      <p>Khaareedo.pk is a place for thoughtful gifts, handmade creations and everyday finds. We bring together special pieces to help you celebrate people, moments and yourself.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="eyebrow">LET'S CONNECT</p><h2>Have something in mind?</h2>
+      <p>Questions about a product or a custom order? We'd love to hear from you.</p>
+      <a class="primary-button" id="contact-link" href="#" target="_blank" rel="noopener">Chat with us on WhatsApp ↗</a>
+      <small>WhatsApp number will be added before launch.</small>
+    </section>
+  </main>
+
+  <footer><a class="footer-brand" href="#">Khaareedo<span>.pk</span></a><p>Thoughtful finds, happy moments.</p><small>© <span id="year"></span> Khaareedo.pk. All rights reserved.</small></footer>
+
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your bag</h2></div><button id="close-cart" class="close-button" aria-label="Close cart">×</button></div>
+    <div id="cart-items" class="cart-items"><p class="empty-cart">Your bag is waiting for something lovely.</p></div>
+    <div class="cart-bottom"><div class="subtotal"><span>Subtotal</span><b id="subtotal">Rs. 0</b></div><p class="shipping-note">Delivery charges, if any, will be confirmed on WhatsApp.</p><button id="checkout" class="primary-button full-button">Continue to order ↗</button></div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
